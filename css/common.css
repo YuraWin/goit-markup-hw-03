@@ -15,8 +15,10 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-li {
+ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -24,11 +26,11 @@ a {
 /* Container */
 .container {
   width: 1230px;
-  padding-left: 15;
-  padding-right: 15;
-
+  padding-left: 15px;
+  padding-right: 15px;
 
   margin: 0 auto;
+  outline: 2px solid tomato;
 }
 
 /* Logo */
@@ -78,6 +80,8 @@ a {
 }
 /* Logo */
 .underside .logo {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 22px;
   color: #ffffff;
 }
@@ -94,15 +98,31 @@ a {
 .underside .link:focus {
   color: var(--accent-color);
 }
+.underside .location {
+  margin-bottom: 9px;
+}
+.underside .tel {
+  margin-bottom: 9px;
+}
 .underside .mailtel {
   color: rgba(255, 255, 255, 0.6);
 }
 .underside .title {
+  display: inline-block;
+  margin-bottom: 21px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+.underside .sing {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
 }
 .underside .copyright {
   color: rgba(255, 255, 255, 0.4);
@@ -113,10 +133,15 @@ a {
 }
 /* button */
 .button {
+  display: inline-block;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
   color: #ffffff;
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  text-align: center;
 }
