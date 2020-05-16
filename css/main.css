@@ -12,12 +12,21 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
-/* Section */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+/* button */
+.button {
+  display: inline-block;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
 }
+
 .section.feature {
   padding-bottom: 0;
 }
