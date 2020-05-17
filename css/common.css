@@ -30,7 +30,7 @@ a {
   padding-right: 15px;
 
   margin: 0 auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Logo */
@@ -45,7 +45,32 @@ a {
   color: var(--accent-color);
 }
 /* Navigation */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-left: 86px;
+}
+/* *******************
+.site-nav .item {
+  margin-right: 50px;
+}
+.site-nav .item:last-child {
+  margin-right: 0;
+} 
+ .site-nav .item + .item {
+  margin-left: 50px;
+} 
+************************ */
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav .link {
+  display: block;
+  padding-top: 31px;
+  padding-bottom: 31px;
   color: var(--second-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -61,6 +86,13 @@ a {
 }
 
 /* Authentific*/
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
 .auth-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -87,6 +119,32 @@ a {
   color: #ffffff;
 }
 /* Logo */
+.underside-container {
+  display: flex;
+}
+.logo-container {
+  min-width: 180px;
+}
+.soc-container {
+  width: 207px;
+  margin-left: auto;
+}
+.attach {
+  display: flex;
+  justify-content: space-between;
+}
+.send-container {
+  width: 482px;
+  margin-left: 100px;
+}
+.send-button {
+  display: flex;
+}
+.send-button .item {
+}
+.send-button .item + .item {
+  margin-left: 12px;
+}
 .underside .logo {
   margin-top: 0;
   margin-bottom: 10px;
