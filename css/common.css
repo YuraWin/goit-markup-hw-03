@@ -7,6 +7,18 @@
   --second-text-color: #212121;
   --accent-color: #2196f3;
 }
+.visuallyhidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 body {
   background-color: #ffffff;
@@ -25,7 +37,7 @@ a {
 }
 /* Container */
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -121,6 +133,10 @@ a {
 /* Logo */
 .underside-container {
   display: flex;
+  align-items: baseline;
+  padding-bottom: 28px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .logo-container {
   min-width: 180px;
